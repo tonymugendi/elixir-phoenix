@@ -1,5 +1,5 @@
 defmodule Forum.Repo do
   use Ecto.Repo,
     otp_app: :forum,
-    adapter: Ecto.Adapters.SQLite3
+    adapter: Ecto.Adapters.Postgres
 end

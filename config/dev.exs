@@ -2,10 +2,13 @@ import Config
 
 # Configure your database
 config :forum, Forum.Repo,
-  database: Path.expand("../forum_dev.db", Path.dirname(__ENV__.file)),
-  pool_size: 5,
+  username: "backend_stuff",
+  password: "tony_erlang",
+  hostname: "localhost",
+  database: "real_deal_api_dev",
   stacktrace: true,
-  show_sensitive_data_on_connection_error: true
+  show_sensitive_data_on_connection_error: true,
+  pool_size: 10
 
 # For development, we disable any cache and enable
 # debugging and code reloading.
